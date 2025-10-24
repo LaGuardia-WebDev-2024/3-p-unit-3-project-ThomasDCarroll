@@ -1,16 +1,16 @@
 <!-- Unit 3 Project
 Requirements
-[  ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
-[  ] Three CSS Rules
-[  ] Three Images
+[ x ] Two External Links
+[ x ] Table (minimum 2 Columns by 3 Rows)
+[ x ] Three CSS Rules
+[ x ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include :hover Effect
-[ no ] Feature 2 - Change the Cursor
-[ no ] Feature 3 - Make a Background Color Semi-Transparent
+[ yes ] Feature 1 - Include :hover Effect
+[ yes ] Feature 2 - Change the Cursor
+[ yes ] Feature 3 - Make a Background Color Semi-Transparent
 [ no ] Feature 4 - Include at Flip Card
-[ no ] Feature 5 - Include at least two Internal links
+[ yes ] Feature 5 - Include at least two Internal links
 -->
 
 <!DOCTYPE html>
@@ -22,16 +22,20 @@ Select ONE Additional Feature to Add
   <style>
 
     body {text-align: center;
+          align-content: center;
+          align-items: center;
           color:rgb(255, 255, 255);
           background-image: url(https://wallpapers.com/images/hd/pink-pixel-art-hn0xpojwzcwidxwx.jpg);
           background-repeat: no-repeat;
           background-attachment: fixed;
-          background-size: contain ;
+          background-size: contain;
           background-color: #1f1e1e;
           font-family: "Geo", sans-serif;
-          font-size: 50px}
+          font-size: 30px;
+          cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:white;font-size:24px;'><text y='50%'>✦</text></svg>") 16 0,auto;}
 
-    h1 {font-size: 100px;
+    h1 {font-size: 90px;
+        line-height: 10px;
         color:rgb(0, 0, 0);
         text-shadow:
                 0 0 5px rgb(255, 140, 140),
@@ -42,6 +46,7 @@ Select ONE Additional Feature to Add
         padding: 20px;}
 
     h2 {font-size: 75px;
+        line-height: 10px;
         text-shadow:
             0 0 5px rgb(255, 140, 140),
             0 0 10px rgb(255, 140, 140),
@@ -49,18 +54,46 @@ Select ONE Additional Feature to Add
             0 0 40px rgb(255, 140, 140),
             0 0 80px rgb(255, 140, 140);
         padding: 20px;}
+    h2:hover {color:black}
 
-        a {color: rgb(255, 140, 140);}
+    h3 {font-size: 30px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;}
+
+    a {color: rgb(255, 140, 140);
+       text-decoration: none;}
+    a:hover {-webkit-text-stroke: 1px rgb(255, 255, 255);}
 
     table {background-color: rgba(76, 41, 41, 0.75);
            table-layout: fixed;
-           width: 60%;}
+           width: 60%;
+           box-sizing: border-box;}
+    table, th, td {border: 2px solid #ffff;
+                   font-size: 30px;
+                   padding: 10px;}
 
-    h2:hover {color:black}
-    body {font-size: 25px;}
+    .lists {border: 2px solid #ffff;
+            background-color: rgba(76, 41, 41, 0.75);
+            align-content: center;
+            display: inline-block;
+            text-align: left;
+            width: 60%;
+            padding: 0 10px 0 10px;
+            box-sizing: border-box;}
 
-    table, th, td {border: 1px solid #ffff;
-                   font-size: 40px}
+    img {width: 60%;
+         border: 2px solid #ffff;
+         box-sizing: border-box;}
+
+    p {color: black;
+       text-shadow:
+        0 0 1px rgb(255, 140, 140),
+        0 0 2px rgb(255, 140, 140),
+        0 0 4px rgb(255, 140, 140),
+        0 0 8px rgb(255, 140, 140),
+        0 0 16px rgb(255, 140, 140);}
+
+    .game-link {color:rgb(255, 255, 255);}
 
   </style>
 
@@ -95,13 +128,13 @@ Select ONE Additional Feature to Add
     <tbody>
       <tr>
         <td><a href="#dbh">Detroit: Become Human</a></td>
-        <td>✦ ✦ ✦</td>
+        <td>✦ ✦ ✦ ✦</td>
         <td>13 Hours</td>
       </tr>
       <tr>
         <td><a href="#gris">Gris</a></td>
         <td>✦ ✦ ✦ ✦</td>
-        <td> Hours</td>
+        <td>6 Hours</td>
       </tr>
       <tr>
         <td><a href="#hk">Hollow Knight</a></td>
@@ -130,7 +163,7 @@ Select ONE Additional Feature to Add
       </tr>
       <tr>
         <td><a href="#in">Inside</a></td>
-        <td>✦ ✦ ✦</td>
+        <td>✦ ✦ ✦ ✦</td>
         <td>7 Hours</td>
       </tr>
       <tr>
@@ -157,19 +190,209 @@ Select ONE Additional Feature to Add
   </table>
 
   <h2 id="dbh">Detroit: Become Human</h2>
+
+  <img src="https://cdn1.epicgames.com/columbine/offer/DETROIT_1-2560x1440-4fd6608a56880dc5d8e9d968517113c3.jpg">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>My stress levels were THROUGH THE ROOF.</li>
+    <li>I played this in one 13 hour sitting, which I DO NOT reccomennd. My decisions by the end were becoming increasingly unintelegent, and I ended up killing some characters on accident...</li>
+    <li>Super cool story and atmosphere! I really bonded with the characters, which made my playthrough feel like constant emotional whiplash.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" class="game-link">here</a></strong></em> ✦</p>
+
+
   <h2 id="gris">Gris</h2>
+
+  <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000014006/bc4e849ea0ca47cffd0437b56ee9a80fbaf917d49d867f8bbf93e7106e46c1a3">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>First things first, this artstyle was gorgeous.</li>
+    <li>Amazing story with beautiful visuals to match. I literally cried sad and happy tears at the end it was so good.</li>
+    <li>Highly reccomend if you want to play a short narrative game with some deeper topics.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/683320/GRIS/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="hk">Hollow Knight</h2>
+
+  <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>Soo... your probably wondering why it took me over 100 hours to finish a 40 hour game. Long story short, I restarted 3 times...</li>
+    <li>I unfortunately got the bad ending T^T.</li>
+    <li>I would have more to say, but I was kind of sick of the 1st Hollow Knight by the time I FINALLY finished. :(</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/367520/Hollow_Knight/?curator_clanid=6862584" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="hks">Hollow Knight: Silksong</h2>
+
+  <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000105851/8787627be7f26ae7984456ffd9af17bea845032cebbf59fe6eeb596dea6bb20e">
+
+  <p> My Rating: ✦✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>This was literally just Hollow Knight, but more difficult and with a better world (in my humble opinion).</li>
+    <li>Literally the only reason I finished the 1st game after 5 years of not doing so.</li>
+    <li>I would also have more to say about this one, but I already did in my last unit project, which is linked below if you want to go look at it!</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/" class="game-link">here</a></strong></em> ✦</p>
+
+  <p>✦ <em><strong>Look at my past project about Silksong <a href="https://laguardia-webdev-2024.github.io/2-p-unit-2-project-ThomasDCarroll/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="lis">Life is Strange</h2>
+
+  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_LifeIsStrangeRemastered_image1600w.jpg">
+
+  <p> My Rating: ✦✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>When I tell you this game was made for me...</li>
+    <li>If I could live in Arcadia Bay, I would (obviously looking past all of the... interesting circumstances of the story)</li>
+    <li>I was full on crying the entire time I played LiS. It was insanely beautiful, and I could not reccomend playing it more.</li>
+    <li>Kate was the best character, and I will NOT change that opinion.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/1265920/Life_is_Strange_Remastered/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="lh">Little Hope</h2>
+
+  <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000051069/19c03b5ad4ac2780dd7159e0f88a460346a3201e340db5cb31cc5450d553c997">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>I love me a Supermassive game (Until Dawn, anyone?).</li>
+    <li>Taylor was MISUNDERSTOOD. Im convinced anyone would act the way she did if faced with their situation</li>
+    <li>Me and my brother played the couch co-op with my mom, and we somehow got everyone out alive, so I dont know if I would say its a hard game...</li>
+    <li>Besides it's one GIANT flaw, Little Hope was great, and I really enjoyed my time with it!</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/1194630/The_Dark_Pictures_Anthology_Little_Hope/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="ln">Little Nightmares</h2>
+
+  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_LittleNightmaresCompleteEdition_image1280w.jpg">
+
+  <p> My Rating: ✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>After hearing so many good things about Little Nightmares, and remembering it being really good, I was so excited to finally play it myself. Unfortunately, I dont know if it lived up to my expectations.</li>
+    <li>Dont get me wrong, Little Nightmares was good, but its length, and specifically the lack of difficulty made it so the game didnt have that much of an impact on me.</li>
+    <li>I will say, however, that the Geisha was an amazing final boss, and I really enjoyed the ending!</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/424840/Little_Nightmares/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="in">Inside</h2>
+
+  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Inside.jpg">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>This one was REALLY nostalgic.</li>
+    <li>I loved the vibe of the game, and I enjoyed my time with it a lot!</li>
+    <li>Super fun puzzles, paired with an interesting idea. A little short and non-descript, but still worth playing nonetheless.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/304430/INSIDE/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="mom">Man of Medan</h2>
+
+  <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_TheDarkPicturesAnthologyManOfMedan_image1280w.jpg">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>Another DPA game... what can I say...</li>
+    <li>Conrad was my dude, like, he was way too smart for the rest of the cast...</li>
+    <li>Because of the way me and my brother played,it ended up being a lot shorter so there were definitely some plot points we missed...</li>
+    <li>Really enjoyed this one, but it suffered from a little predictability, and (in my case) was too short.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/304430/INSIDE/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="ninah">No, I'm Not a Human</h2>
+
+  <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/5/5e/Header.jpg/revision/latest?cb=20250927223215">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>Theres a reason why this game was blowing up a couple weeks ago. The premise is SO interesting.</li>
+    <li>I ended up getting one of the mediocre endings, but the good endings are literally impossible so I wont blame myself.</li>
+    <li>If your a fan of really creepy games, you would definitely enjoy this game.</li>
+    <li>Super fun if you play it with your friends, and make decisions together!</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="sf">Split Fiction</h2>
+
+  <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000097434/6de085f1efb6c90b754e383fe810f3cb0e847105bb584c706f4cd3b5c66491f4">
+
+  <p> My Rating: ✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>Played this with my brother, and really enjoyed it!</li>
+    <li>The story wasnt anything crazy, but it was still enjoyable, and had some CRAZY twists.</li>
+    <li>I loved all the different worlds, and had so much fun exploring!</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/2001120/Split_Fiction/" class="game-link">here</a></strong></em> ✦</p>
+
   <h2 id="tlc">The Last Campfire</h2>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+  <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000028625/5051ba08c1489fb7b9661a6757d7b95e0a208a7dc34d00bf570b5dfc4d3dfd24">
+
+  <p> My Rating: ✦✦✦✦✦</p>
+
+  <div class="lists">
+  <ul>
+    <li>Such a cute game with an equally adorable storyline.</li>
+    <li>Would heavily reccomend if you want a short story and some light fun.</li>
+    <li>Short but sweet. My type of game lol.</li>
+  </ul>
+  </div>
+
+  <p>✦ <em><strong>Buy the game <a href="https://store.steampowered.com/app/990630/The_Last_Campfire/" class="game-link">here</a></strong></em> ✦</p>
+
+  <h2>The End!</h2>
+
+  <div class="lists">
+  <h3>Thanks for looking through my project! I spent a lot of this year playing through games that I watched YouTube playthroughs of when I was younger (Inside, Little Nightmares, etc...), and have had a lot of fun reminiscing! If you have any games you really like or think I should play any of the sequels to the games I have here, feel free to tell me :D.</h3>
+  </div>
 
 </body>
 
